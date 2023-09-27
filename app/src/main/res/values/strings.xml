@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Login</string>
     <string name="hint_email">E-mail</string>
+    <string name="hint_senha">Senha</string>
 </resources>
