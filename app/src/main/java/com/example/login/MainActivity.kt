@@ -4,6 +4,7 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.login.databinding.ActivityMainBinding
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity() {
                 senha.isEmpty() -> {
                     binding.editSenha.error = "Preencha a Senha!"
                 }
+
             }
         }
     }
