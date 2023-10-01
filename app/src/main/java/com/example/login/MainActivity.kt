@@ -1,5 +1,6 @@
 package com.example.login
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.hide()
-        window.statusBarColor = Color.parseColor("#FFFFFF")
+        window.statusBarColor = Color.parseColor("#19B1A3")
 
         binding.btEntrar.setOnClickListener {
             val email = binding.editEmail.text.toString()
@@ -57,8 +58,15 @@ class MainActivity : AppCompatActivity() {
         binding.btEntrar.setTextColor(Color.parseColor("#FFFFFF"))
 
         Handler(Looper.getMainLooper()).postDelayed({
+            navegarTelaHome()
             val snackbar = Snackbar.make(view,"Login efetuado com sucesso!",Snackbar.LENGTH_SHORT)
             snackbar.show()
         }, 3000)
     }
+    private fun navegarTelaHome() {
+        val intent = Intent(this, TelaHome::class.java)
+        startActivity(intent)
+        finish()
+    }
+
 }
