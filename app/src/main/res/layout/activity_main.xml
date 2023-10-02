@@ -26,7 +26,7 @@
         android:id="@+id/imgCapa"
         android:layout_width="226dp"
         android:layout_height="200dp"
-        android:src="@drawable/capa"
+        android:src="@drawable/logo"
         app:layout_constraintTop_toTopOf="@id/containerTop"
         app:layout_constraintBottom_toBottomOf="@id/containerTop"
         app:layout_constraintEnd_toEndOf="@id/containerTop"
@@ -34,10 +34,10 @@
         app:layout_constraintStart_toStartOf="@id/containerTop"/>
 
     <ImageView
-        android:layout_width="123dp"
-        android:layout_height="98dp"
-        android:layout_marginBottom="92dp"
-        android:src="@drawable/roteiro"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="62dp"
+        android:src="@drawable/logo2"
         app:layout_constraintBottom_toBottomOf="@id/containerTop"
         app:layout_constraintEnd_toEndOf="@id/containerTop"
         app:layout_constraintHorizontal_bias="0.854"
