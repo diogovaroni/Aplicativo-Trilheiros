@@ -49,6 +49,10 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+        binding.txtTelaCadastro.setOnClickListener{
+            val cadastro = Intent(this, TelaCadastro::class.java)
+            startActivity(cadastro)
+        }
     }
     private fun login(view: View){
         val progressbar = binding.progressBar
@@ -66,7 +70,10 @@ class MainActivity : AppCompatActivity() {
     private fun navegarTelaHome() {
         val intent = Intent(this, TelaHome::class.java)
         startActivity(intent)
-        finish()
     }
-
+    override fun onRestart() {
+        super.onRestart()
+        binding.editEmail.setText("")
+        binding.editSenha.setText("")
+    }
 }
