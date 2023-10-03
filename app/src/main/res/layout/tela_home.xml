@@ -5,15 +5,19 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".views.TelaHome">
+    tools:context=".views.TelaHome"
+    android:background="@color/blueCapa">
 
     <EditText
         android:id="@+id/edit_modelo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:hint="Equipamento"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:background="@color/white"/>
 
-        />
 
     <Button
         android:id="@+id/button_inserir"
@@ -21,7 +25,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Inserir" />
-
 
     <Button
         android:id="@+id/button_editar"
@@ -41,6 +44,6 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-                                             />
+        android:layout_gravity="left"/>
 
 </LinearLayout>

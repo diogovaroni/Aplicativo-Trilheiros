@@ -1,5 +1,6 @@
 package com.example.login.views
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -19,6 +20,8 @@ class TelaHome : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding =  TelaHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        window.statusBarColor = Color.parseColor("#19B1A3")
 
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
 
