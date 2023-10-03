@@ -8,6 +8,7 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import com.example.login.databinding.ActivityMainBinding
+import com.example.login.views.TelaHome
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {

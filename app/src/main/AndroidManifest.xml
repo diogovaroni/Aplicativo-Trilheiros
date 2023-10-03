@@ -16,7 +16,7 @@
             android:name=".TelaCadastro"
             android:exported="false" />
         <activity
-            android:name=".TelaHome"
+            android:name=".views.TelaHome"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
