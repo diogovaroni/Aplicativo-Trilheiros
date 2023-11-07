@@ -8,9 +8,13 @@ import com.example.login.adapter.ItensListAdapter
 import com.example.login.data.ProdutoTeste
 import com.example.login.databinding.TelaHomeBinding
 import com.example.login.model.Produto
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class TelaHome : AppCompatActivity() {
 
+    private lateinit var auth: FirebaseAuth
     private lateinit var  binding: TelaHomeBinding
     private lateinit var  adapter: ItensListAdapter
     private lateinit var  teste: ProdutoTeste
@@ -60,7 +64,14 @@ class TelaHome : AppCompatActivity() {
                 pos = -1
             }
         }
+        binding.btSair.setOnClickListener {
+            auth = Firebase.auth
+            auth.signOut()
+            finish()
+        }
     }
+
+
 
     private fun pesquisaPosicao(id: Int): Int {
         for (i in teste.listaProdutos.indices) {
